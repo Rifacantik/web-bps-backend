@@ -13,32 +13,10 @@ class DummyUserSeeder extends Seeder
      */
     public function run(): void
     {
-        //Hapus semua user lama
-        User::truncate();
-
-        // Menambahkan user dummy
-        User::create([
-            'name' => 'Admin',
-            'email' => 'admin@example.com',
-            'password' => Hash::make('password'),
-        ]);
-
-        // Menambahkan beberapa user dummy lainnya
-        User::create([
-            'name' => 'John Doe',
-            'email' => 'johndoe@example.com',
-            'password' => Hash::make('password123'),
-        ]);
-
-        User::create([
-            'name' => 'Jane Smith',
-            'email' => 'janesmith@example.com',
-            'password' => Hash::make('password456'),
-        ]);
 
         User::create([
             'name' => 'Ripoy',
-            'email' => 'ripoy@email.com',
+            'email' => 'rifa@email.com',
             'password' => Hash::make('ripoycantik'),
         ]);
     }
